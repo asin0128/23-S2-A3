@@ -17,7 +17,10 @@ class Mode1Navigator:
         """
         Student-TODO: Best/Worst Case
         """
-        raise NotImplementedError
+        # 1. We sort the islands based on their values
+        for islands in self.islands:
+            value = islands.money / islands.marines
+
 
     def select_islands_from_crew_numbers(self, crew_numbers: list[int]) -> list[float]:
         """
